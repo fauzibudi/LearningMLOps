@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  fastapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    command: ["uvicorn", "src.api:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:latest
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mlruns:/mlruns
+    command: mlflow ui --host 0.0.0.0
+    depends_on:
+      - fastapi
+
+networks:
+  default:
+    driver: bridge

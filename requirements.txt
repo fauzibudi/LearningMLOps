@@ -1,0 +1,13 @@
+pandas>=2.2.2
+numpy>=1.26.4
+scikit-learn>=1.5.1
+xgboost>=3.0.2
+optuna>=4.4.0
+matplotlib>=3.9.2
+seaborn>=0.13.2
+mlflow>=3.1.0
+fastapi>=0.115.12
+uvicorn>=0.34.3
+pydantic>=2.11.7
+joblib>=1.4.2
+dotenv>=0.1.0

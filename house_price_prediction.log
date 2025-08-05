@@ -1,0 +1,376 @@
+2025-08-05 07:40:13,844 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:40:13,844 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:40:14,074 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:40:14,074 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:41:52,389 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:41:52,389 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:41:52,593 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:41:52,593 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:42:26,848 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:42:26,848 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:42:27,054 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:42:27,054 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:42:49,507 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:42:49,507 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:42:49,720 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:42:49,720 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:43:26,337 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:43:26,337 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:43:26,547 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:43:26,547 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:44:02,110 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:44:02,110 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:44:02,315 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:44:02,315 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:45:55,982 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:45:55,982 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:45:56,195 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:45:56,195 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:46:52,110 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:46:52,110 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:46:52,345 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:46:52,345 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:48:13,233 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:48:13,233 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:48:13,472 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:48:13,472 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:48:15,300 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 07:48:15,300 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 07:49:39,474 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:49:39,474 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:49:39,684 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:49:39,684 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:49:41,257 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 07:49:41,257 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 07:51:44,209 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:51:44,209 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:51:44,424 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:51:44,424 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:51:45,994 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 07:51:45,994 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 07:51:50,727 - HousePricePrediction - INFO - Linear Regression - RMSE: 20528.13, MAE: 14286.95, R2: 0.9049
+2025-08-05 07:51:50,727 - HousePricePrediction - INFO - Linear Regression - RMSE: 20528.13, MAE: 14286.95, R2: 0.9049
+2025-08-05 07:51:50,805 - HousePricePrediction - INFO - Training Lasso Regression
+2025-08-05 07:51:50,805 - HousePricePrediction - INFO - Training Lasso Regression
+2025-08-05 07:51:53,516 - HousePricePrediction - INFO - Lasso Regression - RMSE: 41087.49, MAE: 28396.38, R2: 0.6191
+2025-08-05 07:51:53,516 - HousePricePrediction - INFO - Lasso Regression - RMSE: 41087.49, MAE: 28396.38, R2: 0.6191
+2025-08-05 07:51:53,586 - HousePricePrediction - INFO - Training Ridge Regression
+2025-08-05 07:51:53,586 - HousePricePrediction - INFO - Training Ridge Regression
+2025-08-05 07:51:56,224 - HousePricePrediction - INFO - Ridge Regression - RMSE: 19926.21, MAE: 13925.70, R2: 0.9104
+2025-08-05 07:51:56,224 - HousePricePrediction - INFO - Ridge Regression - RMSE: 19926.21, MAE: 13925.70, R2: 0.9104
+2025-08-05 07:53:28,777 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:53:28,777 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:53:28,989 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:53:28,989 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:53:30,604 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 07:53:30,604 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 07:53:34,181 - HousePricePrediction - INFO - Linear Regression - RMSE: 20528.13, MAE: 14286.95, R2: 0.9049
+2025-08-05 07:53:34,181 - HousePricePrediction - INFO - Linear Regression - RMSE: 20528.13, MAE: 14286.95, R2: 0.9049
+2025-08-05 07:53:34,246 - HousePricePrediction - INFO - Training Lasso Regression
+2025-08-05 07:53:34,246 - HousePricePrediction - INFO - Training Lasso Regression
+2025-08-05 07:53:36,986 - HousePricePrediction - INFO - Lasso Regression - RMSE: 41087.49, MAE: 28396.38, R2: 0.6191
+2025-08-05 07:53:36,986 - HousePricePrediction - INFO - Lasso Regression - RMSE: 41087.49, MAE: 28396.38, R2: 0.6191
+2025-08-05 07:53:37,043 - HousePricePrediction - INFO - Training Ridge Regression
+2025-08-05 07:53:37,043 - HousePricePrediction - INFO - Training Ridge Regression
+2025-08-05 07:53:39,782 - HousePricePrediction - INFO - Ridge Regression - RMSE: 19925.24, MAE: 13925.07, R2: 0.9104
+2025-08-05 07:53:39,782 - HousePricePrediction - INFO - Ridge Regression - RMSE: 19925.24, MAE: 13925.07, R2: 0.9104
+2025-08-05 07:57:18,630 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:57:18,630 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 07:57:18,851 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:57:18,851 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 07:57:18,854 - HousePricePrediction - INFO - Optimizing Ridge Regression hyperparameters
+2025-08-05 07:57:18,854 - HousePricePrediction - INFO - Optimizing Ridge Regression hyperparameters
+2025-08-05 07:57:20,442 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 07:57:20,442 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 07:57:24,013 - HousePricePrediction - INFO - Linear Regression - RMSE: 20528.13, MAE: 14286.95, R2: 0.9049
+2025-08-05 07:57:24,013 - HousePricePrediction - INFO - Linear Regression - RMSE: 20528.13, MAE: 14286.95, R2: 0.9049
+2025-08-05 07:57:24,068 - HousePricePrediction - INFO - Training Lasso Regression
+2025-08-05 07:57:24,068 - HousePricePrediction - INFO - Training Lasso Regression
+2025-08-05 07:57:26,687 - HousePricePrediction - INFO - Lasso Regression - RMSE: 41087.49, MAE: 28396.38, R2: 0.6191
+2025-08-05 07:57:26,687 - HousePricePrediction - INFO - Lasso Regression - RMSE: 41087.49, MAE: 28396.38, R2: 0.6191
+2025-08-05 07:57:26,741 - HousePricePrediction - INFO - Training Ridge Regression
+2025-08-05 07:57:26,741 - HousePricePrediction - INFO - Training Ridge Regression
+2025-08-05 07:57:29,360 - HousePricePrediction - INFO - Ridge Regression - RMSE: 19927.89, MAE: 13926.77, R2: 0.9104
+2025-08-05 07:57:29,360 - HousePricePrediction - INFO - Ridge Regression - RMSE: 19927.89, MAE: 13926.77, R2: 0.9104
+2025-08-05 07:57:29,368 - HousePricePrediction - INFO - Submission file generated: submission.csv
+2025-08-05 07:57:29,368 - HousePricePrediction - INFO - Submission file generated: submission.csv
+2025-08-05 07:57:29,437 - HousePricePrediction - INFO - Training Random Forest Regression
+2025-08-05 07:57:29,437 - HousePricePrediction - INFO - Training Random Forest Regression
+2025-08-05 07:57:33,798 - HousePricePrediction - INFO - Random Forest Regression - RMSE: 26240.00, MAE: 16874.43, R2: 0.8447
+2025-08-05 07:57:33,798 - HousePricePrediction - INFO - Random Forest Regression - RMSE: 26240.00, MAE: 16874.43, R2: 0.8447
+2025-08-05 07:57:33,866 - HousePricePrediction - INFO - Training XGBoost Regression
+2025-08-05 07:57:33,866 - HousePricePrediction - INFO - Training XGBoost Regression
+2025-08-05 07:57:37,540 - HousePricePrediction - INFO - XGBoost Regression - RMSE: 25164.99, MAE: 16808.58, R2: 0.8571
+2025-08-05 07:57:37,540 - HousePricePrediction - INFO - XGBoost Regression - RMSE: 25164.99, MAE: 16808.58, R2: 0.8571
+2025-08-05 08:00:53,584 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 08:00:53,584 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 08:00:53,791 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 08:00:53,791 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 08:00:53,794 - HousePricePrediction - INFO - Optimizing Ridge Regression hyperparameters
+2025-08-05 08:00:53,794 - HousePricePrediction - INFO - Optimizing Ridge Regression hyperparameters
+2025-08-05 08:00:55,392 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 08:00:55,392 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 08:00:58,832 - HousePricePrediction - INFO - Linear Regression - RMSE: 20528.13, MAE: 14286.95, R2: 0.9049
+2025-08-05 08:00:58,832 - HousePricePrediction - INFO - Linear Regression - RMSE: 20528.13, MAE: 14286.95, R2: 0.9049
+2025-08-05 08:00:58,887 - HousePricePrediction - INFO - Training Lasso Regression
+2025-08-05 08:00:58,887 - HousePricePrediction - INFO - Training Lasso Regression
+2025-08-05 08:01:01,561 - HousePricePrediction - INFO - Lasso Regression - RMSE: 41087.49, MAE: 28396.38, R2: 0.6191
+2025-08-05 08:01:01,561 - HousePricePrediction - INFO - Lasso Regression - RMSE: 41087.49, MAE: 28396.38, R2: 0.6191
+2025-08-05 08:01:01,616 - HousePricePrediction - INFO - Training Ridge Regression
+2025-08-05 08:01:01,616 - HousePricePrediction - INFO - Training Ridge Regression
+2025-08-05 08:01:04,193 - HousePricePrediction - INFO - Ridge Regression - RMSE: 19925.89, MAE: 13925.49, R2: 0.9104
+2025-08-05 08:01:04,193 - HousePricePrediction - INFO - Ridge Regression - RMSE: 19925.89, MAE: 13925.49, R2: 0.9104
+2025-08-05 08:01:04,199 - HousePricePrediction - INFO - Submission file generated: submission.csv
+2025-08-05 08:01:04,199 - HousePricePrediction - INFO - Submission file generated: submission.csv
+2025-08-05 08:01:04,255 - HousePricePrediction - INFO - Training Random Forest Regression
+2025-08-05 08:01:04,255 - HousePricePrediction - INFO - Training Random Forest Regression
+2025-08-05 08:01:08,507 - HousePricePrediction - INFO - Random Forest Regression - RMSE: 26240.00, MAE: 16874.43, R2: 0.8447
+2025-08-05 08:01:08,507 - HousePricePrediction - INFO - Random Forest Regression - RMSE: 26240.00, MAE: 16874.43, R2: 0.8447
+2025-08-05 08:01:08,559 - HousePricePrediction - INFO - Training XGBoost Regression
+2025-08-05 08:01:08,559 - HousePricePrediction - INFO - Training XGBoost Regression
+2025-08-05 08:01:11,630 - HousePricePrediction - INFO - XGBoost Regression - RMSE: 25164.99, MAE: 16808.58, R2: 0.8571
+2025-08-05 08:01:11,630 - HousePricePrediction - INFO - XGBoost Regression - RMSE: 25164.99, MAE: 16808.58, R2: 0.8571
+2025-08-05 08:01:21,568 - HousePricePrediction - INFO - Model loaded successfully
+2025-08-05 08:05:07,029 - HousePricePrediction - INFO - Model loaded successfully
+2025-08-05 08:08:14,220 - HousePricePrediction - INFO - Model loaded successfully from ridge_regression_model.pkl
+2025-08-05 08:08:33,471 - HousePricePrediction - INFO - Model loaded successfully from ridge_regression_model.pkl
+2025-08-05 08:08:52,018 - HousePricePrediction - INFO - Model loaded successfully from ridge_regression_model.pkl
+2025-08-05 08:10:17,491 - HousePricePrediction - INFO - Received prediction request
+2025-08-05 08:10:17,504 - HousePricePrediction - ERROR - Error during prediction: X has 79 features, but Ridge is expecting 80 features as input.
+2025-08-05 08:20:06,364 - HousePricePrediction - INFO - Model loaded successfully from ridge_regression_model.pkl
+2025-08-05 08:20:10,701 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 08:20:10,701 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 08:20:10,980 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 08:20:10,980 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 08:20:10,986 - HousePricePrediction - INFO - Optimizing Ridge Regression hyperparameters
+2025-08-05 08:20:10,986 - HousePricePrediction - INFO - Optimizing Ridge Regression hyperparameters
+2025-08-05 08:20:12,835 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 08:20:12,835 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 08:20:16,730 - HousePricePrediction - INFO - Linear Regression - RMSE: 20528.13, MAE: 14286.95, R2: 0.9049
+2025-08-05 08:20:16,730 - HousePricePrediction - INFO - Linear Regression - RMSE: 20528.13, MAE: 14286.95, R2: 0.9049
+2025-08-05 08:20:16,791 - HousePricePrediction - INFO - Training Lasso Regression
+2025-08-05 08:20:16,791 - HousePricePrediction - INFO - Training Lasso Regression
+2025-08-05 08:20:20,115 - HousePricePrediction - INFO - Lasso Regression - RMSE: 41087.49, MAE: 28396.38, R2: 0.6191
+2025-08-05 08:20:20,115 - HousePricePrediction - INFO - Lasso Regression - RMSE: 41087.49, MAE: 28396.38, R2: 0.6191
+2025-08-05 08:20:20,192 - HousePricePrediction - INFO - Training Ridge Regression
+2025-08-05 08:20:20,192 - HousePricePrediction - INFO - Training Ridge Regression
+2025-08-05 08:20:23,550 - HousePricePrediction - INFO - Ridge Regression - RMSE: 19926.96, MAE: 13926.18, R2: 0.9104
+2025-08-05 08:20:23,550 - HousePricePrediction - INFO - Ridge Regression - RMSE: 19926.96, MAE: 13926.18, R2: 0.9104
+2025-08-05 08:20:23,559 - HousePricePrediction - INFO - Submission file generated: submission.csv
+2025-08-05 08:20:23,559 - HousePricePrediction - INFO - Submission file generated: submission.csv
+2025-08-05 08:20:23,626 - HousePricePrediction - INFO - Training Random Forest Regression
+2025-08-05 08:20:23,626 - HousePricePrediction - INFO - Training Random Forest Regression
+2025-08-05 08:20:29,051 - HousePricePrediction - INFO - Random Forest Regression - RMSE: 26240.00, MAE: 16874.43, R2: 0.8447
+2025-08-05 08:20:29,051 - HousePricePrediction - INFO - Random Forest Regression - RMSE: 26240.00, MAE: 16874.43, R2: 0.8447
+2025-08-05 08:20:29,105 - HousePricePrediction - INFO - Training XGBoost Regression
+2025-08-05 08:20:29,105 - HousePricePrediction - INFO - Training XGBoost Regression
+2025-08-05 08:20:33,171 - HousePricePrediction - INFO - XGBoost Regression - RMSE: 25164.99, MAE: 16808.58, R2: 0.8571
+2025-08-05 08:20:33,171 - HousePricePrediction - INFO - XGBoost Regression - RMSE: 25164.99, MAE: 16808.58, R2: 0.8571
+2025-08-05 08:21:35,749 - HousePricePrediction - INFO - Model loaded successfully from ridge_regression_model.pkl
+2025-08-05 08:21:38,264 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 08:21:38,264 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 08:21:38,528 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 08:21:38,528 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 08:21:38,532 - HousePricePrediction - INFO - Optimizing Ridge Regression hyperparameters
+2025-08-05 08:21:38,532 - HousePricePrediction - INFO - Optimizing Ridge Regression hyperparameters
+2025-08-05 08:21:40,649 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 08:21:40,649 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 08:21:45,104 - HousePricePrediction - INFO - Linear Regression - RMSE: 20528.13, MAE: 14286.95, R2: 0.9049
+2025-08-05 08:21:45,104 - HousePricePrediction - INFO - Linear Regression - RMSE: 20528.13, MAE: 14286.95, R2: 0.9049
+2025-08-05 08:21:45,160 - HousePricePrediction - INFO - Training Lasso Regression
+2025-08-05 08:21:45,160 - HousePricePrediction - INFO - Training Lasso Regression
+2025-08-05 08:21:48,416 - HousePricePrediction - INFO - Lasso Regression - RMSE: 41087.49, MAE: 28396.38, R2: 0.6191
+2025-08-05 08:21:48,416 - HousePricePrediction - INFO - Lasso Regression - RMSE: 41087.49, MAE: 28396.38, R2: 0.6191
+2025-08-05 08:21:48,475 - HousePricePrediction - INFO - Training Ridge Regression
+2025-08-05 08:21:48,475 - HousePricePrediction - INFO - Training Ridge Regression
+2025-08-05 08:21:51,916 - HousePricePrediction - INFO - Ridge Regression - RMSE: 19926.74, MAE: 13926.04, R2: 0.9104
+2025-08-05 08:21:51,916 - HousePricePrediction - INFO - Ridge Regression - RMSE: 19926.74, MAE: 13926.04, R2: 0.9104
+2025-08-05 08:21:51,926 - HousePricePrediction - INFO - Submission file generated: submission.csv
+2025-08-05 08:21:51,926 - HousePricePrediction - INFO - Submission file generated: submission.csv
+2025-08-05 08:21:51,992 - HousePricePrediction - INFO - Training Random Forest Regression
+2025-08-05 08:21:51,992 - HousePricePrediction - INFO - Training Random Forest Regression
+2025-08-05 08:21:57,118 - HousePricePrediction - INFO - Random Forest Regression - RMSE: 26240.00, MAE: 16874.43, R2: 0.8447
+2025-08-05 08:21:57,118 - HousePricePrediction - INFO - Random Forest Regression - RMSE: 26240.00, MAE: 16874.43, R2: 0.8447
+2025-08-05 08:21:57,174 - HousePricePrediction - INFO - Training XGBoost Regression
+2025-08-05 08:21:57,174 - HousePricePrediction - INFO - Training XGBoost Regression
+2025-08-05 08:22:00,966 - HousePricePrediction - INFO - XGBoost Regression - RMSE: 25164.99, MAE: 16808.58, R2: 0.8571
+2025-08-05 08:22:00,966 - HousePricePrediction - INFO - XGBoost Regression - RMSE: 25164.99, MAE: 16808.58, R2: 0.8571
+2025-08-05 08:23:40,270 - HousePricePrediction - INFO - Model loaded successfully from ridge_regression_model.pkl
+2025-08-05 08:23:51,780 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 08:23:51,780 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 08:23:52,058 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 08:23:52,058 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 08:23:52,062 - HousePricePrediction - INFO - Optimizing Ridge Regression hyperparameters
+2025-08-05 08:23:52,062 - HousePricePrediction - INFO - Optimizing Ridge Regression hyperparameters
+2025-08-05 08:23:54,050 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 08:23:54,050 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 08:23:58,789 - HousePricePrediction - INFO - Linear Regression - RMSE: 20572.00, MAE: 14260.93, R2: 0.9045
+2025-08-05 08:23:58,789 - HousePricePrediction - INFO - Linear Regression - RMSE: 20572.00, MAE: 14260.93, R2: 0.9045
+2025-08-05 08:23:58,853 - HousePricePrediction - INFO - Training Lasso Regression
+2025-08-05 08:23:58,853 - HousePricePrediction - INFO - Training Lasso Regression
+2025-08-05 08:24:02,170 - HousePricePrediction - INFO - Lasso Regression - RMSE: 41105.57, MAE: 28404.85, R2: 0.6188
+2025-08-05 08:24:02,170 - HousePricePrediction - INFO - Lasso Regression - RMSE: 41105.57, MAE: 28404.85, R2: 0.6188
+2025-08-05 08:24:02,240 - HousePricePrediction - INFO - Training Ridge Regression
+2025-08-05 08:24:02,240 - HousePricePrediction - INFO - Training Ridge Regression
+2025-08-05 08:24:05,526 - HousePricePrediction - INFO - Ridge Regression - RMSE: 19949.24, MAE: 13882.72, R2: 0.9102
+2025-08-05 08:24:05,526 - HousePricePrediction - INFO - Ridge Regression - RMSE: 19949.24, MAE: 13882.72, R2: 0.9102
+2025-08-05 08:24:05,530 - HousePricePrediction - INFO - Submission file generated: submission.csv
+2025-08-05 08:24:05,530 - HousePricePrediction - INFO - Submission file generated: submission.csv
+2025-08-05 08:24:05,590 - HousePricePrediction - INFO - Training Random Forest Regression
+2025-08-05 08:24:05,590 - HousePricePrediction - INFO - Training Random Forest Regression
+2025-08-05 08:24:10,743 - HousePricePrediction - INFO - Random Forest Regression - RMSE: 26366.88, MAE: 16949.05, R2: 0.8432
+2025-08-05 08:24:10,743 - HousePricePrediction - INFO - Random Forest Regression - RMSE: 26366.88, MAE: 16949.05, R2: 0.8432
+2025-08-05 08:24:10,821 - HousePricePrediction - INFO - Training XGBoost Regression
+2025-08-05 08:24:10,821 - HousePricePrediction - INFO - Training XGBoost Regression
+2025-08-05 08:24:15,042 - HousePricePrediction - INFO - XGBoost Regression - RMSE: 24204.28, MAE: 16505.87, R2: 0.8678
+2025-08-05 08:24:15,042 - HousePricePrediction - INFO - XGBoost Regression - RMSE: 24204.28, MAE: 16505.87, R2: 0.8678
+2025-08-05 08:24:25,014 - HousePricePrediction - INFO - Model loaded successfully from ridge_regression_model.pkl
+2025-08-05 08:24:35,071 - HousePricePrediction - INFO - Received prediction request
+2025-08-05 08:24:35,075 - HousePricePrediction - INFO - Prediction: 1.2432740323922652e+59
+2025-08-05 08:27:18,231 - HousePricePrediction - INFO - Received prediction request
+2025-08-05 08:27:18,232 - HousePricePrediction - INFO - Prediction: 1.2432740323922652e+59
+2025-08-05 08:27:59,071 - HousePricePrediction - INFO - Model loaded successfully. Expecting 79 features.
+2025-08-05 08:28:05,013 - HousePricePrediction - INFO - Received prediction request
+2025-08-05 08:28:05,013 - HousePricePrediction - ERROR - Validation error: X has 81 features, but Ridge is expecting 79 features as input.
+2025-08-05 08:29:11,083 - HousePricePrediction - INFO - Received prediction request
+2025-08-05 08:29:11,083 - HousePricePrediction - ERROR - Validation error: X has 80 features, but Ridge is expecting 79 features as input.
+2025-08-05 08:29:30,712 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 08:29:30,712 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 08:29:30,976 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 08:29:30,976 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 08:29:30,980 - HousePricePrediction - INFO - Optimizing Ridge Regression hyperparameters
+2025-08-05 08:29:30,980 - HousePricePrediction - INFO - Optimizing Ridge Regression hyperparameters
+2025-08-05 08:29:33,121 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 08:29:33,121 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 08:29:37,600 - HousePricePrediction - INFO - Linear Regression - RMSE: 20572.00, MAE: 14260.93, R2: 0.9045
+2025-08-05 08:29:37,600 - HousePricePrediction - INFO - Linear Regression - RMSE: 20572.00, MAE: 14260.93, R2: 0.9045
+2025-08-05 08:29:37,660 - HousePricePrediction - INFO - Training Lasso Regression
+2025-08-05 08:29:37,660 - HousePricePrediction - INFO - Training Lasso Regression
+2025-08-05 08:29:41,121 - HousePricePrediction - INFO - Lasso Regression - RMSE: 41105.57, MAE: 28404.85, R2: 0.6188
+2025-08-05 08:29:41,121 - HousePricePrediction - INFO - Lasso Regression - RMSE: 41105.57, MAE: 28404.85, R2: 0.6188
+2025-08-05 08:29:41,197 - HousePricePrediction - INFO - Training Ridge Regression
+2025-08-05 08:29:41,197 - HousePricePrediction - INFO - Training Ridge Regression
+2025-08-05 08:29:44,253 - HousePricePrediction - INFO - Ridge Regression - RMSE: 19948.26, MAE: 13882.13, R2: 0.9102
+2025-08-05 08:29:44,253 - HousePricePrediction - INFO - Ridge Regression - RMSE: 19948.26, MAE: 13882.13, R2: 0.9102
+2025-08-05 08:29:44,263 - HousePricePrediction - INFO - Submission file generated: submission.csv
+2025-08-05 08:29:44,263 - HousePricePrediction - INFO - Submission file generated: submission.csv
+2025-08-05 08:29:44,335 - HousePricePrediction - INFO - Training Random Forest Regression
+2025-08-05 08:29:44,335 - HousePricePrediction - INFO - Training Random Forest Regression
+2025-08-05 08:29:49,964 - HousePricePrediction - INFO - Random Forest Regression - RMSE: 26366.88, MAE: 16949.05, R2: 0.8432
+2025-08-05 08:29:49,964 - HousePricePrediction - INFO - Random Forest Regression - RMSE: 26366.88, MAE: 16949.05, R2: 0.8432
+2025-08-05 08:29:50,033 - HousePricePrediction - INFO - Training XGBoost Regression
+2025-08-05 08:29:50,033 - HousePricePrediction - INFO - Training XGBoost Regression
+2025-08-05 08:29:53,530 - HousePricePrediction - INFO - XGBoost Regression - RMSE: 24204.28, MAE: 16505.87, R2: 0.8678
+2025-08-05 08:29:53,530 - HousePricePrediction - INFO - XGBoost Regression - RMSE: 24204.28, MAE: 16505.87, R2: 0.8678
+2025-08-05 08:29:56,955 - HousePricePrediction - INFO - Received prediction request
+2025-08-05 08:29:56,955 - HousePricePrediction - ERROR - Validation error: X has 80 features, but Ridge is expecting 79 features as input.
+2025-08-05 08:30:22,530 - HousePricePrediction - INFO - Received prediction request
+2025-08-05 08:30:22,535 - HousePricePrediction - INFO - Prediction: 120876.91766749257
+2025-08-05 08:33:27,692 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 08:33:27,692 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 08:33:27,958 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 08:33:27,958 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 08:33:27,961 - HousePricePrediction - INFO - Optimizing Ridge Regression hyperparameters
+2025-08-05 08:33:27,961 - HousePricePrediction - INFO - Optimizing Ridge Regression hyperparameters
+2025-08-05 08:33:29,936 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 08:33:29,936 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 08:33:34,603 - HousePricePrediction - INFO - Linear Regression - RMSE: 20572.00, MAE: 14260.93, R2: 0.9045
+2025-08-05 08:33:34,603 - HousePricePrediction - INFO - Linear Regression - RMSE: 20572.00, MAE: 14260.93, R2: 0.9045
+2025-08-05 08:33:34,666 - HousePricePrediction - INFO - Training Lasso Regression
+2025-08-05 08:33:34,666 - HousePricePrediction - INFO - Training Lasso Regression
+2025-08-05 08:33:37,930 - HousePricePrediction - INFO - Lasso Regression - RMSE: 41105.57, MAE: 28404.85, R2: 0.6188
+2025-08-05 08:33:37,930 - HousePricePrediction - INFO - Lasso Regression - RMSE: 41105.57, MAE: 28404.85, R2: 0.6188
+2025-08-05 08:33:37,995 - HousePricePrediction - INFO - Training Ridge Regression
+2025-08-05 08:33:37,995 - HousePricePrediction - INFO - Training Ridge Regression
+2025-08-05 08:33:41,428 - HousePricePrediction - INFO - Ridge Regression - RMSE: 19948.20, MAE: 13882.09, R2: 0.9102
+2025-08-05 08:33:41,428 - HousePricePrediction - INFO - Ridge Regression - RMSE: 19948.20, MAE: 13882.09, R2: 0.9102
+2025-08-05 08:33:41,434 - HousePricePrediction - INFO - Submission file generated: submission.csv
+2025-08-05 08:33:41,434 - HousePricePrediction - INFO - Submission file generated: submission.csv
+2025-08-05 08:33:41,491 - HousePricePrediction - INFO - Training Random Forest Regression
+2025-08-05 08:33:41,491 - HousePricePrediction - INFO - Training Random Forest Regression
+2025-08-05 08:33:47,141 - HousePricePrediction - INFO - Random Forest Regression - RMSE: 26366.88, MAE: 16949.05, R2: 0.8432
+2025-08-05 08:33:47,141 - HousePricePrediction - INFO - Random Forest Regression - RMSE: 26366.88, MAE: 16949.05, R2: 0.8432
+2025-08-05 08:33:47,201 - HousePricePrediction - INFO - Training XGBoost Regression
+2025-08-05 08:33:47,201 - HousePricePrediction - INFO - Training XGBoost Regression
+2025-08-05 08:33:50,906 - HousePricePrediction - INFO - XGBoost Regression - RMSE: 24204.28, MAE: 16505.87, R2: 0.8678
+2025-08-05 08:33:50,906 - HousePricePrediction - INFO - XGBoost Regression - RMSE: 24204.28, MAE: 16505.87, R2: 0.8678
+2025-08-05 08:54:43,939 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 08:54:43,939 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 08:54:44,184 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 08:54:44,184 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 08:54:44,188 - HousePricePrediction - INFO - Optimizing Ridge Regression hyperparameters
+2025-08-05 08:54:44,188 - HousePricePrediction - INFO - Optimizing Ridge Regression hyperparameters
+2025-08-05 08:54:45,912 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 08:54:45,912 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 08:54:53,771 - HousePricePrediction - INFO - Linear Regression - RMSE: 20572.00, MAE: 14260.93, R2: 0.9045
+2025-08-05 08:54:53,771 - HousePricePrediction - INFO - Linear Regression - RMSE: 20572.00, MAE: 14260.93, R2: 0.9045
+2025-08-05 08:54:53,827 - HousePricePrediction - INFO - Training Lasso Regression
+2025-08-05 08:54:53,827 - HousePricePrediction - INFO - Training Lasso Regression
+2025-08-05 08:54:56,427 - HousePricePrediction - INFO - Lasso Regression - RMSE: 41105.57, MAE: 28404.85, R2: 0.6188
+2025-08-05 08:54:56,427 - HousePricePrediction - INFO - Lasso Regression - RMSE: 41105.57, MAE: 28404.85, R2: 0.6188
+2025-08-05 08:54:56,500 - HousePricePrediction - INFO - Training Ridge Regression
+2025-08-05 08:54:56,500 - HousePricePrediction - INFO - Training Ridge Regression
+2025-08-05 08:54:59,364 - HousePricePrediction - INFO - Ridge Regression - RMSE: 19949.60, MAE: 13882.94, R2: 0.9102
+2025-08-05 08:54:59,364 - HousePricePrediction - INFO - Ridge Regression - RMSE: 19949.60, MAE: 13882.94, R2: 0.9102
+2025-08-05 08:54:59,372 - HousePricePrediction - INFO - Submission file generated: submission.csv
+2025-08-05 08:54:59,372 - HousePricePrediction - INFO - Submission file generated: submission.csv
+2025-08-05 08:54:59,426 - HousePricePrediction - INFO - Training Random Forest Regression
+2025-08-05 08:54:59,426 - HousePricePrediction - INFO - Training Random Forest Regression
+2025-08-05 08:55:03,735 - HousePricePrediction - INFO - Random Forest Regression - RMSE: 26366.88, MAE: 16949.05, R2: 0.8432
+2025-08-05 08:55:03,735 - HousePricePrediction - INFO - Random Forest Regression - RMSE: 26366.88, MAE: 16949.05, R2: 0.8432
+2025-08-05 08:55:03,804 - HousePricePrediction - INFO - Training XGBoost Regression
+2025-08-05 08:55:03,804 - HousePricePrediction - INFO - Training XGBoost Regression
+2025-08-05 08:55:07,627 - HousePricePrediction - INFO - XGBoost Regression - RMSE: 24204.28, MAE: 16505.87, R2: 0.8678
+2025-08-05 08:55:07,627 - HousePricePrediction - INFO - XGBoost Regression - RMSE: 24204.28, MAE: 16505.87, R2: 0.8678
+2025-08-05 08:56:16,871 - HousePricePrediction - INFO - Model loaded successfully. Expecting 79 features.
+2025-08-05 08:56:34,814 - HousePricePrediction - INFO - Received prediction request
+2025-08-05 08:56:34,814 - HousePricePrediction - ERROR - Validation error: X has 80 features, but Ridge is expecting 79 features as input.
+2025-08-05 08:56:45,245 - HousePricePrediction - INFO - Received prediction request
+2025-08-05 08:56:45,245 - HousePricePrediction - ERROR - Validation error: X has 80 features, but Ridge is expecting 79 features as input.
+2025-08-05 08:57:04,346 - HousePricePrediction - INFO - Received prediction request
+2025-08-05 08:57:04,346 - HousePricePrediction - ERROR - Validation error: X has 80 features, but Ridge is expecting 79 features as input.
+2025-08-05 08:57:07,782 - HousePricePrediction - INFO - Received prediction request
+2025-08-05 08:57:07,782 - HousePricePrediction - ERROR - Validation error: X has 80 features, but Ridge is expecting 79 features as input.
+2025-08-05 08:57:24,136 - HousePricePrediction - INFO - Received prediction request
+2025-08-05 08:57:24,166 - HousePricePrediction - INFO - Prediction: 120879.62222134219
+2025-08-05 08:57:37,596 - HousePricePrediction - INFO - Received prediction request
+2025-08-05 08:57:37,597 - HousePricePrediction - INFO - Prediction: 120879.62222134219
+2025-08-05 10:18:10,036 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 10:18:10,036 - HousePricePrediction - INFO - Starting data preprocessing
+2025-08-05 10:18:10,284 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 10:18:10,284 - HousePricePrediction - INFO - Data preprocessing completed
+2025-08-05 10:18:10,290 - HousePricePrediction - INFO - Optimizing Ridge Regression hyperparameters
+2025-08-05 10:18:10,290 - HousePricePrediction - INFO - Optimizing Ridge Regression hyperparameters
+2025-08-05 10:18:12,199 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 10:18:12,199 - HousePricePrediction - INFO - Training Linear Regression
+2025-08-05 10:18:16,595 - HousePricePrediction - INFO - Linear Regression - RMSE: 20572.00, MAE: 14260.93, R2: 0.9045
+2025-08-05 10:18:16,595 - HousePricePrediction - INFO - Linear Regression - RMSE: 20572.00, MAE: 14260.93, R2: 0.9045
+2025-08-05 10:18:16,662 - HousePricePrediction - INFO - Training Lasso Regression
+2025-08-05 10:18:16,662 - HousePricePrediction - INFO - Training Lasso Regression
+2025-08-05 10:18:19,846 - HousePricePrediction - INFO - Lasso Regression - RMSE: 41105.57, MAE: 28404.85, R2: 0.6188
+2025-08-05 10:18:19,846 - HousePricePrediction - INFO - Lasso Regression - RMSE: 41105.57, MAE: 28404.85, R2: 0.6188
+2025-08-05 10:18:19,945 - HousePricePrediction - INFO - Training Ridge Regression
+2025-08-05 10:18:19,945 - HousePricePrediction - INFO - Training Ridge Regression
+2025-08-05 10:18:23,157 - HousePricePrediction - INFO - Ridge Regression - RMSE: 19948.02, MAE: 13881.99, R2: 0.9102
+2025-08-05 10:18:23,157 - HousePricePrediction - INFO - Ridge Regression - RMSE: 19948.02, MAE: 13881.99, R2: 0.9102
+2025-08-05 10:18:23,169 - HousePricePrediction - INFO - Submission file generated: submission.csv
+2025-08-05 10:18:23,169 - HousePricePrediction - INFO - Submission file generated: submission.csv
+2025-08-05 10:18:23,257 - HousePricePrediction - INFO - Training Random Forest Regression
+2025-08-05 10:18:23,257 - HousePricePrediction - INFO - Training Random Forest Regression
+2025-08-05 10:18:28,240 - HousePricePrediction - INFO - Random Forest Regression - RMSE: 26366.88, MAE: 16949.05, R2: 0.8432
+2025-08-05 10:18:28,240 - HousePricePrediction - INFO - Random Forest Regression - RMSE: 26366.88, MAE: 16949.05, R2: 0.8432
+2025-08-05 10:18:28,328 - HousePricePrediction - INFO - Training XGBoost Regression
+2025-08-05 10:18:28,328 - HousePricePrediction - INFO - Training XGBoost Regression
+2025-08-05 10:18:31,930 - HousePricePrediction - INFO - XGBoost Regression - RMSE: 24204.28, MAE: 16505.87, R2: 0.8678
+2025-08-05 10:18:31,930 - HousePricePrediction - INFO - XGBoost Regression - RMSE: 24204.28, MAE: 16505.87, R2: 0.8678
+2025-08-05 10:19:43,748 - HousePricePrediction - INFO - Model loaded successfully. Expecting 79 features.
+2025-08-05 10:20:43,250 - HousePricePrediction - INFO - Received prediction request
+2025-08-05 10:20:43,250 - HousePricePrediction - ERROR - Validation error: X has 80 features, but Ridge is expecting 79 features as input.
+2025-08-05 10:21:28,370 - HousePricePrediction - INFO - Received prediction request
+2025-08-05 10:21:28,389 - HousePricePrediction - INFO - Prediction: 121101.86340556727
+2025-08-05 10:44:08,074 - HousePricePrediction - INFO - Model loaded successfully. Expecting 79 features.
+2025-08-05 03:50:26,621 - HousePricePrediction - INFO - Model loaded successfully. Expecting 79 features.
+2025-08-05 03:57:03,841 - HousePricePrediction - INFO - Received prediction request
+2025-08-05 03:57:03,887 - HousePricePrediction - INFO - Prediction: 121101.86340556727
+2025-08-05 04:10:57,796 - HousePricePrediction - INFO - Model loaded successfully. Expecting 79 features.
+2025-08-05 04:26:45,691 - HousePricePrediction - INFO - Model loaded successfully. Expecting 79 features.
