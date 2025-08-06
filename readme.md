@@ -18,20 +18,21 @@ Setup Video: https://drive.google.com/file/d/11GEU9LT9-v98e_lSz-bzxNruTbWDvPW_/v
 ## Project Structure
 ```
 │
-├── data/                  # Contains train.csv and test.csv
+├── data/                        # Contains train.csv and test.csv
 ├── src/
-│   ├── data/              # Data loading and preprocessing scripts
-│   ├── models/            # Model training and prediction scripts
-│   ├── api.py             # FastAPI application
-│   ├── utils/             # Utility functions (logger, config)
-├── notebook/              # Contain notebook(.ipynb) for EDA and experiments
-├── main_api.py            # Entry point for the API server
-├── Dockerfile             # Docker configuration
-├── docker-compose.yml     # Docker Compose configuration
-├── requirements.txt       # Python dependencies
-├── house_price_prediction.log  # Log file
-└── README.md              # This file
+│   ├── data/                    # Data loading and preprocessing scripts
+│   ├── models/                  # Model training and prediction scripts
+│   ├── api.py                   # FastAPI application
+│   ├── utils/                   # Utility functions (logger, config)
+├── notebook/                    # Contain notebook(.ipynb) for EDA and experiments
+├── main_api.py                  # Entry point for the API server
+├── Dockerfile                   # Docker configuration
+├── docker-compose.yml           # Docker Compose configuration
+├── requirements.txt             # Python dependencies
+├── house_price_prediction.log   # Log file
+└── README.md                    # This file
 ```
+
 
 
 
