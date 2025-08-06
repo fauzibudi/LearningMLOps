@@ -45,7 +45,6 @@ def train_models(data_path, test_path=None):
         'XGBoost Regression': {'model': create_model('XGBoost Regression', random_state=42)}
     }
 
-    # Optimize Ridge
     logger.info("Optimizing Ridge Regression hyperparameters")
     best_params = optimize_ridge(X_train, y_train)
     models['Ridge Regression']['model'] = create_model('Ridge Regression', **best_params)
@@ -79,10 +78,11 @@ def generate_submission(model, X_test, test_ids):
     """Generate submission file."""
     y_test_pred_log = model.predict(X_test)
     y_test_pred = np.expm1(y_test_pred_log)
-    # Pastikan panjang sesuai dengan indeks X_test
+
     submission = pd.DataFrame({
-        'Id': test_ids.iloc[:len(y_test_pred)],  # Potong test_ids agar sesuai dengan y_test_pred
+        'Id': test_ids.iloc[:len(y_test_pred)],  
         'SalePrice': y_test_pred
     })
     submission.to_csv('submission.csv', index=False)
+
     logger.info("Submission file generated: submission.csv")
