@@ -1,6 +1,6 @@
 # House Price Prediction MLOps Project
 
-This project implements an end-to-end MLOps pipeline for predicting house prices(Dataset: https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/overview). It includes modular code, MLflow tracking, logging, FastAPI deployment, and Docker containerization.
+This project implements an end-to-end MLOps pipeline for predicting house prices(Dataset: https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/overview). It includes modular code, MLflow tracking, logging, FastAPI deployment, and Docker containerization. We using ridge model with MAE: 13880.88, RMSE: 19946.24, R-squared: 0.9102.
 Setup Video: https://drive.google.com/file/d/11GEU9LT9-v98e_lSz-bzxNruTbWDvPW_/view?usp=sharing
 
 ## Setup
@@ -29,5 +29,6 @@ Setup Video: https://drive.google.com/file/d/11GEU9LT9-v98e_lSz-bzxNruTbWDvPW_/v
 ├── requirements.txt       # Python dependencies
 ├── house_price_prediction.log  # Log file
 └── README.md              # This file
+
 
 
