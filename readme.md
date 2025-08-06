@@ -16,6 +16,7 @@ Setup Video: https://drive.google.com/file/d/11GEU9LT9-v98e_lSz-bzxNruTbWDvPW_/v
 8. Run `http://localhost:5000` for MLflow in docker and `http://localhost:8000/` for FastAPI in docker
 
 ## Project Structure
+```
 │
 ├── data/                  # Contains train.csv and test.csv
 ├── src/
@@ -30,6 +31,8 @@ Setup Video: https://drive.google.com/file/d/11GEU9LT9-v98e_lSz-bzxNruTbWDvPW_/v
 ├── requirements.txt       # Python dependencies
 ├── house_price_prediction.log  # Log file
 └── README.md              # This file
+```
+
 
 
 
