@@ -690,7 +690,7 @@ elif page == "📈 Data Insights":
                 yaxis=dict(showgrid=False)
             )
             st.plotly_chart(fig_missing, use_container_width=True)
-            st.info("Missing values are handled during preprocessing by imputation (e.g., 'No Pool' for PoolQC, median for LotFrontage).")
+            st.info("Missing values are handled during preprocessing by imputation.")
         else:
             st.success("No missing values found in the raw training data (after initial load).")
 
@@ -715,7 +715,7 @@ elif page == "📈 Data Insights":
                 yaxis=dict(showgrid=False)
             )
             st.plotly_chart(fig_top_corr, use_container_width=True)
-            st.info("Features like OverallQual, GrLivArea, and GarageCars show strong positive correlation with SalePrice.")
+            st.info("Features like GarageArea, GrLivArea, and GarageCars show strong positive correlation with SalePrice.")
         else:
             st.warning("SalePrice column not found for correlation analysis.")
 
@@ -906,3 +906,4 @@ st.markdown(f"""
     <p>Developed by Fauzi Budi | House Price Prediction Tool</p>
 </div>
 """, unsafe_allow_html=True)
+
