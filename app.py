@@ -531,7 +531,6 @@ if page == "👤 About Me":
         st.markdown(create_info_panel(f"""
         <h3>📞 Contact Details</h3>
         <p><strong>Email:</strong> fbwmalang123@gmail.com</p>
-        <p><strong>Phone:</strong> <a href="wa.me/6285785068026" target="_blank" style="color: {COLOR_PALETTE['main']};">+62 85785068026 </a></p> 
         <p><strong>Location:</strong> Malang, East Java</p>
         <p><strong>GitHub:</strong> <a href="https://github.com/fauzibudi" target="_blank" style="color: {COLOR_PALETTE['main']};">github.com/fauzibudi</a></p>
         <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/fbudiw98/" target="_blank" style="color: {COLOR_PALETTE['main']};">linkedin.com/in/fbudiw98/</a></p>
@@ -856,5 +855,6 @@ st.markdown(f"""
     <p>Developed by Fauzi Budi | House Price Prediction Tool</p>
 </div>
 """, unsafe_allow_html=True)
+
 
 
