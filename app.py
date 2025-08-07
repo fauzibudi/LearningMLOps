@@ -604,6 +604,7 @@ elif page == "📂 My Projects":
 
 elif page == "📈 Data Insights":
     st.markdown(create_main_title("Housing Data Exploration"), unsafe_allow_html=True)
+    st.write("In this project I want to predict house prices based on various features using regression.")
     df_raw = load_data_csv('data/train.csv')
     
     if df_raw is None:
@@ -855,6 +856,7 @@ st.markdown(f"""
     <p>Developed by Fauzi Budi | House Price Prediction Tool</p>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
