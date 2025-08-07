@@ -380,8 +380,6 @@ def preprocess_data(df_train_raw, df_test_raw):
     if 'Id' in df_test.columns:
         df_test = df_test.drop('Id', axis=1)
 
-    # Define numerical fill values *exactly* as in main.ipynb, including Series
-    # These will be used in the problematic fillna call.
     numerical_fill_train_series_dict = {
         'LotFrontage': df_train['LotFrontage'].median(),
         'GarageYrBlt': df_train['YearBuilt'], # This is a Series
@@ -402,71 +400,58 @@ def preprocess_data(df_train_raw, df_test_raw):
         'BsmtFinSF1': 0, 'BsmtFinSF2': 0, 'BsmtUnfSF': 0, 'TotalBsmtSF': 0
     }
 
-    # Replicate main.ipynb's fillna sequence exactly
     df_train.fillna(categorical_fill, inplace=True)
-    df_train.fillna(numerical_fill_train_series_dict, inplace=True) # This is the key line to match
-    df_train.dropna(inplace=True) # This will drop rows where numerical_fill_train_series_dict failed
+    df_train.fillna(numerical_fill_train_series_dict, inplace=True) 
+    df_train.dropna(inplace=True) 
 
     df_test.fillna(categorical_fill, inplace=True)
-    df_test.fillna(numerical_fill_test_series_dict, inplace=True) # This is the key line to match
+    df_test.fillna(numerical_fill_test_series_dict, inplace=True) 
     df_test.dropna(subset=['MSZoning', 'SaleType', 'Functional', 'KitchenQual', 'Utilities', 'Electrical'], inplace=True)
 
-    # Outlier Removal (based on SalePrice and GrLivArea)
     df_train = df_train[df_train['SalePrice'] < df_train['SalePrice'].quantile(0.99)]
     df_train = df_train[df_train['GrLivArea'] < df_train['GrLivArea'].quantile(0.99)]
 
-    # Separate features (X) and target (y)
     X = df_train.drop('SalePrice', axis=1)
-    y = np.log1p(df_train['SalePrice']) # Log transform SalePrice
+    y = np.log1p(df_train['SalePrice']) 
 
     X_test = df_test.copy()
 
-    # Align columns between X and X_test before encoding/scaling
     train_cols = X.columns.tolist()
     test_cols = X_test.columns.tolist()
 
-    # Add missing columns to X_test, fill with 0 (or appropriate default)
     for c in train_cols:
         if c not in test_cols:
-            X_test[c] = 0 # Or a sensible default for numerical/categorical encoded
+            X_test[c] = 0
     
-    # Drop extra columns from X_test that are not in X
     for c in test_cols:
         if c not in train_cols:
             X_test = X_test.drop(c, axis=1)
 
-    X_test = X_test[train_cols] # Ensure same column order as training data
+    X_test = X_test[train_cols] 
 
-    # Label Encoding for categorical features
     label_encoders = {}
     for col in categorical_cols:
         if col in X.columns:
             le = LabelEncoder()
-            # Fit on X only, then handle 'Other' for X_test, as in main.ipynb
             le.fit(X[col])
             X[col] = le.transform(X[col])
             
-            # Replicate the 'Other' handling exactly
             X_test[col] = X_test[col].apply(lambda x: x if x in le.classes_ else 'Other')
             if 'Other' not in le.classes_:
                 le.classes_ = np.append(le.classes_, 'Other')
             X_test[col] = le.transform(X_test[col])
             label_encoders[col] = le
 
-    # Min-Max Scaling for numerical features
     scaler = MinMaxScaler()
-    scaler.fit(X[numerical_cols]) # Fit scaler only on training data
+    scaler.fit(X[numerical_cols])
 
     X[numerical_cols] = scaler.transform(X[numerical_cols])
     X_test[numerical_cols] = scaler.transform(X_test[numerical_cols])
 
-    # Return the numerical_fill_train_series_dict for single prediction,
-    # but convert Series to scalar medians for practical use in Streamlit inputs.
     numerical_fill_train_cached_scalars = {k: v.median() if isinstance(v, pd.Series) else v for k, v in numerical_fill_train_series_dict.items()}
 
     return X, y, X_test, label_encoders, scaler, categorical_cols, numerical_cols, numerical_fill_train_cached_scalars
 
-# --- Model Training and Tuning ---
 @st.cache_resource
 def train_and_tune_model(X, y):
     """
@@ -478,9 +463,8 @@ def train_and_tune_model(X, y):
         """Optuna objective function for Ridge Regression."""
         alpha = trial.suggest_float('alpha', 0.1, 100.0, log=True)
         ridge = Ridge(alpha=alpha, random_state=42)
-        # Use cross-validation for robust evaluation
         score = cross_val_score(ridge, X_train, y_train, scoring='neg_mean_absolute_error', cv=5)
-        return -score.mean() # Optuna minimizes, so return negative MAE
+        return -score.mean()
 
     st.info("Starting Optuna hyperparameter tuning for Ridge Regression... This may take a few moments.")
     try:
@@ -495,10 +479,9 @@ def train_and_tune_model(X, y):
     best_ridge = Ridge(**study.best_params, random_state=42)
     best_ridge.fit(X_train, y_train)
 
-    # Evaluate on validation set
     y_pred_val_log = best_ridge.predict(X_val)
-    y_pred_val = np.expm1(y_pred_val_log) # Inverse log transform
-    y_val_orig = np.expm1(y_val) # Inverse log transform original y_val
+    y_pred_val = np.expm1(y_pred_val_log) 
+    y_val_orig = np.expm1(y_val) 
 
     st.subheader("Optimized Ridge Regression Performance on Validation Set:")
     mae = mean_absolute_error(y_val_orig, y_pred_val)
@@ -513,7 +496,6 @@ def train_and_tune_model(X, y):
     with col_metrics_3:
         st.markdown(create_stat_card(f"{r2:.4f}", "R-squared (R²)"), unsafe_allow_html=True)
 
-    # Plot Actual vs Predicted
     fig, ax = plt.subplots(figsize=(10, 7))
     sns.scatterplot(x=y_val_orig, y=y_pred_val, alpha=0.6, ax=ax, color=COLOR_PALETTE['main'])
     ax.plot([y_val_orig.min(), y_val_orig.max()], [y_val_orig.min(), y_val_orig.max()], 'r--', lw=2, label='Perfect Prediction')
@@ -533,14 +515,12 @@ def train_and_tune_model(X, y):
 
     return best_ridge, X_train, y_train, X_val, y_val
 
-# --- Sidebar Navigation ---
 st.sidebar.title("🌟 Navigation Menu")
 page = st.sidebar.selectbox(
     "Select a Section:",
     ["👤 About Me", "📂 My Projects", "📈 Data Insights", "📉 Model Evaluation", "🔮 Prediction"]
 )
 
-# --- PAGE 1: About Me ---
 if page == "👤 About Me":
     st.markdown(create_main_title("Fauzi Budi Wicaksono"), unsafe_allow_html=True)
     st.markdown(create_section_title("Data Science, AI ML Enthusiast"), unsafe_allow_html=True)
@@ -593,7 +573,6 @@ if page == "👤 About Me":
     **Data Science Training** | Digital Talent Scholarship 
     """)
 
-# --- PAGE 2: My Projects ---
 elif page == "📂 My Projects":
     st.markdown(create_main_title("My Other Projects"), unsafe_allow_html=True)
     st.markdown(create_section_title("Project Highlights"), unsafe_allow_html=True)
@@ -624,7 +603,6 @@ elif page == "📂 My Projects":
         st.markdown(f"[View My Project]({proj['link']})")
         st.markdown("---")
 
-# --- PAGE 3: Data Insights ---
 elif page == "📈 Data Insights":
     st.markdown(create_main_title("Housing Data Exploration"), unsafe_allow_html=True)
     df_raw = load_data_csv('data/train.csv')
@@ -719,8 +697,6 @@ elif page == "📈 Data Insights":
         else:
             st.warning("SalePrice column not found for correlation analysis.")
 
-
-# --- PAGE 4: Model Evaluation ---
 elif page == "📉 Model Evaluation":
     st.markdown(create_main_title("Model Performance"), unsafe_allow_html=True)
     st.markdown(create_section_title("Model Training & Evaluation"), unsafe_allow_html=True)
@@ -729,7 +705,6 @@ elif page == "📉 Model Evaluation":
     if df_train_raw is None or df_test_raw is None:
         st.warning("Cannot proceed with model evaluation. Please ensure data files are available.")
     else:
-        # Store original test_ids before preprocessing drops 'Id'
         original_test_ids = df_test_raw['Id']
 
         with st.spinner("Preprocessing data for model training..."):
@@ -757,16 +732,13 @@ elif page == "📉 Model Evaluation":
         else:
             st.info("Model not yet trained. Please click 'Train and Tune Ridge Regression Model' above.")
 
-
-# --- PAGE 5: Price Prediction ---
 elif page == "🔮 Prediction":
     st.markdown(create_main_title("House Price Prediction"), unsafe_allow_html=True)
     st.markdown(create_section_title("Make Predictions"), unsafe_allow_html=True)
 
-    # Ensure model and preprocessing objects are loaded/available
     if 'best_ridge_model' not in st.session_state:
         st.warning("Model not trained yet. Please go to 'Model Evaluation' page and train the model first.")
-        st.stop() # Stop execution if model is not available
+        st.stop() 
 
     best_ridge_model = st.session_state['best_ridge_model']
     X_test_processed = st.session_state['X_test_processed']
@@ -774,20 +746,16 @@ elif page == "🔮 Prediction":
     label_encoders = st.session_state['label_encoders']
     scaler = st.session_state['scaler']
     numerical_fill_train_cached = st.session_state['numerical_fill_train_cached']
-    X_columns = st.session_state['X_columns'] # Get the column order from training data
+    X_columns = st.session_state['X_columns'] 
 
     st.write("The Ridge Regression model is trained and ready for predictions.")
-
-    # Option 1: Predict on the entire test set and generate submission file
+    
     st.markdown(create_section_title("Batch Prediction on Test Data"), unsafe_allow_html=True)
     if st.button("Generate Submission File for Test Data"):
         with st.spinner("Generating predictions for the test set..."):
             y_test_pred_log = best_ridge_model.predict(X_test_processed)
-            y_test_pred = np.expm1(y_test_pred_log) # Inverse log transform
+            y_test_pred = np.expm1(y_test_pred_log) 
 
-            # Ensure test_ids aligns with X_test_processed indices
-            # The X_test_processed index might be different if rows were dropped.
-            # We need to map back to the original test_ids based on the index.
             submission = pd.DataFrame({
                 'Id': test_ids.loc[X_test_processed.index],
                 'SalePrice': y_test_pred
@@ -810,15 +778,13 @@ elif page == "🔮 Prediction":
 
     user_input = {}
     
-    # Organize inputs into tabs for better UX
     tab1, tab2 = st.tabs(["Numerical Features", "Categorical Features"])
 
     with tab1:
         st.markdown("#### Numerical Features")
         for col in numerical_cols:
-            # Use the cached scalar values for defaults in Streamlit inputs
             default_value = numerical_fill_train_cached.get(col, 0)
-            default_value = float(default_value) # Ensure float for number_input
+            default_value = float(default_value) 
 
             if col in ['YearBuilt', 'YearRemodAdd', 'YrSold', 'GarageYrBlt']:
                 user_input[col] = st.number_input(f"{FEATURE_DEFINITIONS.get(col, col)} ({col})", min_value=1800, max_value=2023, value=int(default_value) if default_value else 2000, key=f"num_{col}")
@@ -834,14 +800,12 @@ elif page == "🔮 Prediction":
         for col in categorical_cols:
             if col in label_encoders:
                 options = list(label_encoders[col].classes_)
-                # Ensure 'Other' is an option if it was added during preprocessing
                 if 'Other' not in options and 'Other' in label_encoders[col].classes_:
                     options.append('Other')
                 
-                # Set default value for selectbox
                 default_cat_val = categorical_fill.get(col, options[0] if options else '')
                 if default_cat_val not in options and options:
-                    default_cat_val = options[0] # Fallback to first option if default not in options
+                    default_cat_val = options[0] 
                 
                 user_input[col] = st.selectbox(f"{FEATURE_DEFINITIONS.get(col, col)} ({col})", options, index=options.index(default_cat_val) if default_cat_val in options else 0, key=f"cat_{col}")
             else:
@@ -849,42 +813,29 @@ elif page == "🔮 Prediction":
 
     if st.button("Predict Single House Price", key="predict_single_button"):
         try:
-            # Create a DataFrame from user input
             single_house_df = pd.DataFrame([user_input])
-
-            # Apply the same preprocessing steps as the training data
-            # 1. Fill missing values (user input should be complete, but this ensures consistency)
             single_house_df.fillna(categorical_fill, inplace=True)
-
-            # Replicate the numerical fill logic for single prediction
-            # First, handle GarageYrBlt specifically
             if 'GarageYrBlt' in single_house_df.columns:
                 single_house_df['GarageYrBlt'] = single_house_df['GarageYrBlt'].fillna(single_house_df['YearBuilt'])
             
-            # Then, fill other numerical columns using the scalar medians from training data
             for col, val in numerical_fill_train_cached.items():
                 if col in single_house_df.columns:
                     single_house_df[col] = single_house_df[col].fillna(val)
 
 
-            # 2. Apply Label Encoding
             for col in categorical_cols:
                 if col in label_encoders:
                     le = label_encoders[col]
-                    # Handle unseen labels in user input by mapping to 'Other'
                     single_house_df[col] = single_house_df[col].apply(lambda x: x if x in le.classes_ else 'Other')
                     single_house_df[col] = le.transform(single_house_df[col])
                 else:
                     st.warning(f"LabelEncoder not found for {col}. Skipping encoding for this column.")
-                    single_house_df[col] = pd.to_numeric(single_house_df[col], errors='coerce').fillna(0) # Fallback
+                    single_house_df[col] = pd.to_numeric(single_house_df[col], errors='coerce').fillna(0) 
 
-            # 3. Apply Min-Max Scaling
             single_house_df[numerical_cols] = scaler.transform(single_house_df[numerical_cols])
 
-            # Ensure column order matches training data
             single_house_df = single_house_df[X_columns]
 
-            # Make prediction
             predicted_log_price = best_ridge_model.predict(single_house_df)
             predicted_price = np.expm1(predicted_log_price)[0]
 
@@ -899,11 +850,11 @@ elif page == "🔮 Prediction":
             st.write("Debug Info (Expected X.columns):")
             st.write(X_columns)
 
-# --- Footer ---
 st.markdown("---")
 st.markdown(f"""
 <div class="footer">
     <p>Developed by Fauzi Budi | House Price Prediction Tool</p>
 </div>
 """, unsafe_allow_html=True)
+
 
