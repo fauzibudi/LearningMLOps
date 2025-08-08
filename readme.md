@@ -25,6 +25,7 @@ Setup Video: https://drive.google.com/file/d/11GEU9LT9-v98e_lSz-bzxNruTbWDvPW_/v
 │   ├── api.py                   # FastAPI application
 │   ├── utils/                   # Utility functions (logger, config)
 ├── notebook/                    # Contain notebook(.ipynb) for EDA and experiments
+├── app.py                       # Streamlit
 ├── main_api.py                  # Entry point for the API server
 ├── Dockerfile                   # Docker configuration
 ├── docker-compose.yml           # Docker Compose configuration
@@ -32,6 +33,7 @@ Setup Video: https://drive.google.com/file/d/11GEU9LT9-v98e_lSz-bzxNruTbWDvPW_/v
 ├── house_price_prediction.log   # Log file
 └── README.md                    # This file
 ```
+
 
 
 
