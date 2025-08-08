@@ -773,7 +773,7 @@ elif page == "🔮 Prediction":
         st.dataframe(submission.head())
 
     st.markdown("---")
-    st.markdown(create_section_title("Predict for a Single House (Interactive Input)"), unsafe_allow_html=True)
+    st.markdown(create_section_title("Predict for a Single House"), unsafe_allow_html=True)
     st.write("Enter values for a hypothetical house to get a price prediction:")
 
     user_input = {}
@@ -856,6 +856,7 @@ st.markdown(f"""
     <p>Developed by Fauzi Budi | House Price Prediction Tool</p>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
